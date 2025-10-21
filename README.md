@@ -11,15 +11,15 @@ Cypress-based E2E test suite for the signup flow used at `https://app.qa.nesto.c
 
 ## Run tests
 
-npx cypress open
+`npx cypress open`
 
-npx cypress run
+`npx cypress run`
 
 Set LANG env for tests (overrides default `env: { LANG: "en" }` in cypress.config.ts):
 
-npx cypress run --env LANG=fr
+`npx cypress run --env LANG=fr`
 # or for open
-npx cypress open --env LANG=fr
+`npx cypress open --env LANG=fr`
 
 ## Notes
 - Base URL is `https://app.qa.nesto.ca` (set in cypress.config.ts).
