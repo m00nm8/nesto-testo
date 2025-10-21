@@ -1,0 +1,26 @@
+List of issues found
+
+Environment: qa / prod
+
+1) Signup form validation - invalid phone numbers accepted (skipped test)
+  - Steps: [on /signup] input '000 000 00 00' as phone number
+  - Expected: phone validation errors shown.
+  - Actual: phone number accepted.
+
+2) Signup form validation - invalid first name and last name accepted (skipped test)
+  - Steps: [on /signup] input a string with numbers and/or special chars as first or last name
+        - examples: ['11', 'mike2', '@#$', '123abc']
+  - Expected: name validation errors shown.
+  - Actual: account can be created without errors.
+
+3) Incorrect link - terms of service
+  - Steps: [on /signup, language = EN] click "Terms of Service"
+  - Expected: Go to: https://www.nesto.ca/terms-of-services/
+        (Even here, the page title and url has "services", but the banner reads "service")
+  - Actual: Goes to the blank page at https://www.nesto.ca/en/terms-of-services/ (Notice the incorrect /en/)
+  - Note: The link is correct for language = FR
+
+4) (check with product, maybe intended) Clicking on nesto logo takes user to login page
+  - Steps: [on /signup] click the nesto logo on top left
+  - Expected (possibly, I just guess!): Go to nesto home page
+  - Actual: Goes to nesto login page

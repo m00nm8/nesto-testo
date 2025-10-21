@@ -1,0 +1,22 @@
+{
+  "en": {
+    "firstName": "First name",
+    "lastName": "Last name",
+    "phone": "Phone number",
+    "region": "Province of purchase",
+    "email": "Email",
+    "password": "Password",
+    "confirm": "Confirm password",
+    "submit": "Create your account"
+  },
+  "fr": {
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "phone": "Téléphone",
+    "region": "Province de l'achat",
+    "email": "Courriel",
+    "password": "Mot de passe",
+    "confirm": "Confirmation du mot de passe",
+    "submit": "Créez votre compte"
+  }
+}
